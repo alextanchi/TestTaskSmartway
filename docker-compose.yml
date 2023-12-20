@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+    postgres:
+      restart: always
+      image: postgres:13.4-alpine
+      environment:
+        POSTGRES_USER: ${POSTGRES_USER:-postgres}
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres1234}
+        PGDATA: /data/postgres
+      volumes:
+        - ./assets/db/create.sql:/docker-entrypoint-initdb.d/create.sql
+      ports:
+        - "54321:5432"
+
+networks:
+  default:
