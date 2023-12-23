@@ -12,7 +12,7 @@ POST http://localhost:8080/sotrudnik/company
 Accept: application/json
 
 {
-  "companyId": 456
+  "companyId": 41
 }
 
 ###
@@ -31,7 +31,7 @@ Accept: application/json
   "name": "Olya",
   "surname": "Volgina",
   "phone": "+71234567890",
-  "companyId": 456,
+  "companyId": 41,
   "passport": {
     "type": "International",
     "number": "AB1234567"
