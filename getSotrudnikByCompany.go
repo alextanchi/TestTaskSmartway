@@ -5,7 +5,7 @@ import (
 	"io"
 	"net/http"
 )
-
+//хэндлер для поулчения сотрудников по компаним 
 func getSotrudnikByCompany(w http.ResponseWriter, r *http.Request) { //приходит запрос, обрабатываем его
 
 	var companyId GetSotrudnikByCompanyRequest //создаем экземпляр сотрудника в которого будем анмаршалить запрос
