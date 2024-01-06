@@ -12,7 +12,7 @@ import (
 
 var db *sql.DB
 
-func initDB() error { // инициализируем подключение к базе данных
+func initDB() error { // инициализируем подключение к бд
 	var err error
 	db, err = sql.Open("postgres",
 		fmt.Sprintf("host=%s port=%d sslmode=%s dbname=%s user=%s password=%s",
