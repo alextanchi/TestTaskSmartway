@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func getSotrudnikByDepartment(w http.ResponseWriter, r *http.Request) { //приходит запрос, обрабатываем его
+func getSotrudnikByDepartment(w http.ResponseWriter, r *http.Request) { //приходит запрос, обрабатываем 
 
 	var departmentName GetSotrudnikByDepartmentRequest //создаем экземпляр сотрудника в который будем анмаршалить запрос
 	requestBody, err := io.ReadAll(r.Body)             //читаем "тело" запроса и сохраняем в requestBody
